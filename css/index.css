@@ -67,30 +67,33 @@ h1, h2, h3, h4, h5 {
 
 body {
     width: 880px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .nav_bar {
 	/* border: 2px solid red; */
    margin-top: 3%;
 	width: 100%;
-	margin-bottom: 5%;
+   margin-bottom: 5%;
+   display: flex;
+   justify-content: space-between;
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
+   /* border: 1px solid blue; */
+   width: 72%;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 1%;
 }
 
-.nav_bar a {
-   margin-top:12px;
-	font-size: 14px;
-	color: gray;
-   display: inline-block;
-   display: flex;
-	justify-content: space-between;
-	text-decoration: none;
-	/* border: 1px solid gray; */
+.nav_bar nav a {
+   text-decoration: none;
+   color: gray;
+}
+
+.nav_bar nav a:hover {
+   text-decoration-line: underline;
 }
 
 .content_1 {
@@ -118,7 +121,8 @@ nav {
 	width: 35%;
 	padding: 5px;
 	margin-left: 32%;
-	background-color: white;
+   background-color: white;
+   cursor: pointer;
 }
 
 .content_1 a {
@@ -197,6 +201,23 @@ footer{
 @media(max-width: 800px) {
    body {
       width: 100%;
+      margin: auto;
+   }
+
+   .nav_bar {
+      flex-direction: column-reverse;
+   }
+
+   nav {
+      width: 100%;
+      padding-top: 7%;
+      justify-content: space-around;
+   }
+
+   .logo {
+      width: 183px;
+      height: 36px;
+      align-self: center;
    }
 
    .content_1 .content_1_box:nth-child(2) {
@@ -207,7 +228,47 @@ footer{
       width: 100%;
       margin-right: 1%;
    }
+}
 
+@media(max-width: 500px) {
+   body {
+      width: 100%;
+   }
+
+   nav {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .nav_bar nav a {
+      border-top: 1px solid gray;
+      padding-top: 3%;
+      padding-bottom: 3%;
+   }
+
+   .nav_bar nav a:last-child {
+      border-bottom: 1px solid gray;
+   }
+
+   .innovation {
+      font-size: 65px;
+   }
+
+   .content_2 {
+      flex-direction: column;
+   }
+
+   .content_2_box {
+      width: 100%;
+   }
+
+   .content_3 {
+      flex-direction: column;
+   }
+
+   .content_3_box {
+      width: 100%;
+   }
 
 }
 
