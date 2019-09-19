@@ -332,7 +332,8 @@ footer{
 	width: 40%;
 	padding: 10px;
 	margin-top: 7%;
-	background-color: white;
+   background-color: white;
+   cursor: pointer;
 }
 
 .facts {
@@ -410,8 +411,31 @@ ul li:before {
       padding-bottom: 3%;
    }
 
-   ..services_nav_bar nav a:last-child {
+   .services_nav_bar nav a:last-child {
       border-bottom: 1px solid gray;
+   }
+
+   .tracks {
+      flex-direction: column;
+   }
+
+   .tracks div {
+      width: 100%;
+   }
+
+   .facts {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .facts div {
+      width: 100%;
+   }
+
+   ul {
+      margin-top: 30px;
+      margin-left: 30px;
+      list-style-position: inside
    }
 
 }
