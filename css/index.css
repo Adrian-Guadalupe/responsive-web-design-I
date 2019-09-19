@@ -274,17 +274,30 @@ footer{
 /* /////////////Services Page Starts Here//////////// */
 
 .services_nav_bar {
-	margin-top: 2%;
-	margin-bottom: 2%;
+	/* border: 2px solid red; */
+   margin-top: 3%;
+	width: 100%;
+   margin-bottom: 5%;
+   display: flex;
+   justify-content: space-between;
 }
 
-.services_nav_bar a {
-	font-size: 14px;
-	color: gray;
-	padding-top: 12px;
-	text-decoration: none;
-	/* border: 1px solid gray; */
-} 
+.services_nav_bar nav {
+   /* border: 1px solid blue; */
+   width: 72%;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 1%;
+}
+
+.services_nav_bar nav a {
+   text-decoration: none;
+   color: gray;
+}
+
+.services_nav_bar nav a:hover {
+   text-decoration-line: underline;
+}
 
 .services {
 	margin-top: 5%;
